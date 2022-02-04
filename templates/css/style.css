@@ -1,0 +1,47 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    font-family: Arial,'Helvetica CY','Nimbus Sans L',sans-serif;
+}
+
+a{color: black}
+a:hover{color: green}
+
+body{
+	width: 100%;
+/*	background-image: url('1.jpg'); */
+	background-color: #bbc8ba;
+	text-align: left;
+	font-family: Verdana,sans-serif;
+}
+
+#output_window {
+	margin-top: 1.8vh;
+
+	height: 75vh;
+	width: 98vw;
+}
+
+#input_window {
+	margin-top: 1.8vh;
+
+	height:18vh;
+	width: 98vw;
+}
+
+/*footer{
+	/*bottom: 0;*/
+	margin-top: 2vh;
+	margin-left: 1vw;
+
+	height:2vh;
+	width: 98vw;
+
+	background-color: #A65F00;
+	text-align: center;
+	font-family: Verdana,sans-serif;
+	font-size: 14px;
+}*/

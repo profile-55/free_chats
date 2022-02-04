@@ -4,7 +4,8 @@ from views import *
 
 URLS = {
     '/': index,
-    '/blog': blog
+    '/blog': blog,
+    '/css/style.css': css
 }
 
 

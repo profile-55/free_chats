@@ -2,8 +2,8 @@ import socket
 
 
 URLS = {
-    '/': 'hello index',
-    '/blog': 'hello blog'
+    '/': 'Main Page',
+    '/blog': 'Hello from Blog!!!'
 }
 
 
@@ -23,10 +23,20 @@ def generate_headers(method, url):
     return 'HTTP/1.1 200 OK\n\n', 200
 
 
+def generate_content(code, url):
+    if code == 404:
+        return "<h1>Page not found<br>404 Error</h1>"
+    if code == 405:
+        return "<h1>Method not allowed<br>405 Error</h1>"
+    return "<h1>{}</h1>".format(URLS[url])
+
+
 def generate_response(request):
     method, url = parse_request(request)
     headers, code = generate_headers(method, url)
-    return (headers + 'Hello World!!!').encode()
+    body = generate_content(code, url)
+
+    return (headers + body).encode()
 
 
 def run():

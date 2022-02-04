@@ -1,9 +1,10 @@
 import socket
+from views import *
 
 
 URLS = {
-    '/': 'Main Page',
-    '/blog': 'Hello from Blog!!!'
+    '/': index,
+    '/blog': blog
 }
 
 
@@ -28,7 +29,7 @@ def generate_content(code, url):
         return "<h1>Page not found<br>404 Error</h1>"
     if code == 405:
         return "<h1>Method not allowed<br>405 Error</h1>"
-    return "<h1>{}</h1>".format(URLS[url])
+    return URLS[url]()
 
 
 def generate_response(request):

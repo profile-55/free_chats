@@ -13,5 +13,10 @@ def css():
         return template.read()
 
 
+def js():
+    with open('./templates/lib.js') as template:
+        return template.read()
+
+
 if __name__ == '__main__':
     print(index(), blog(), sep='\n\n')
